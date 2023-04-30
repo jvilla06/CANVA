@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8" />
+    <title>Dibujo libre con canvas</title>
+    <style>
+     body
+     {
+       background-color:rgb(71, 67, 67);
+       color:white;
+       font-family: Helvetica;
+     }
+    </style>
+   </head>
+   <body>
+      <center><h1>. . . . . . . . . . . . EXPRESATE DIBUJANDO . . . . . . . . . . .</H1></center>
+      <P> Para crear tu obra de arte, haz lo siguiente: </P> 
+        1. Escribe o selecciona el número de lineas que quieres dibujar.
+        <p>2. selecciona el número que corresponda al color que deseas.</p> 
+        3. Haz click en el boton "Dibujar".
+        <p>4. Repite el proceso cuantas veces quieras, jugando con la cantidad de lineas y colores.</p> 
+        5. El boton "Borrar todo", dejara tu hoja totalmente limpia.<br> <br>
+        <script>
+             document.write("1. amarillo  2. azul  3. rojo 4. morado 5. aguamarina 6. violeta 7. naranja 8. fucsia ");
+        </script> <br><br><br>
+       <script>
+        document.write(". . . Superior izquierdo . . . . Superior derecho . . . . . . Inferior izquierdo . . . . . . . Inferior derecho . . . . . . . . . .Elige el color, y cambialo cuantas veses quieras");
+       </script> <br>
+        <input type="number" id ="supe_izq"/>
+        <input type="number" id ="supe_der"/>
+        <input type="number" id ="infe_izq"/>
+        <input type="number" id ="infe_der"/>
+      . . . . . . . . . . . . .   <input type="number" id ="todos_colores"/> <br><br><br>
+      <script>
+       document.write(". . . Centro izquierdo . . . . . . . Centro derecho . . . . . . Centro superior  . . . . . . . . Centro inferior");
+      </script>
+      . . . . . . . . . . . . .  <input type="button" value = "Dibujar " id ="botoncito" />
+      . . . . . . . . <input type="button" value ="Borrar todo" id ="boton_borrar" /> <br>
+        <input type="number" id ="centro_izq"/>
+        <input type="number" id ="centro_der"/>
+        <input type="number" id="centro_mediosup"/>
+        <input type="number" id="centro_medioinf"/> <br><br><br>
+        <canvas>   </canvas>
+        <canvas width="500" height="500" id = "imagen_grande"> </canvas>
+      <P> Aqui esta tu obra de arte </p>
+      <script src="dibujilibremio.js"> </script>
+      </p>
+   </body>
+</html>
